@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Dashboard - Students List</h2>
+<ul>
+    {% for student in students %}
+    <li>{{ student.name }} - <a href="{{ url_for('main.view_result', student_id=student.id) }}">View Results</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}

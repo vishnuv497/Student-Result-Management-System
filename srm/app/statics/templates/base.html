@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Result Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('main.index') }}">Home</a> |
+        <a href="{{ url_for('main.dashboard') }}">Dashboard</a> |
+        <a href="{{ url_for('main.add_result') }}">Add Result</a>
+    </nav>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>

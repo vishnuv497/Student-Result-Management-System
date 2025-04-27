@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTech Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>BTech Application Form</h2>
+        <form action="submit.php" method="POST" enctype="multipart/form-data">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            
+
+            <label for="branch">Preferred Branch:</label>
+            <select id="branch" name="branch" required>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Mechanical">Mechanical</option>
+                <option value="Civil">Civil</option>
+                <option value="Electronics">Electronics</option>
+            </select>
+
+            <label for="AGE">AGE:</label>
+            <input type="AGE" id="AGE" name="AGE" required>
+
+            <label for="document">Upload Documents (PDF only):</label>
+            <input type="file" id="document" name="document" accept=".pdf" required>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+</body>
+</html>
+
